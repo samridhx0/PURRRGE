@@ -8,7 +8,6 @@
 Highlights
 - Full coverage of core SDelete flags (passes, recursion, read‑only removal, quiet mode, treat drive letters, clean `-c`, zero `-z`, and automatic `-nobanner`).
 - Queue‑based execution with live status, exit codes, elapsed time, aggregate progress, and ETA.
-- Responsive UI via per‑job QProcess with streamed stdout/stderr to a dockable console.
 - Command Preview pane and a typed confirmation phrase to prevent accidents.
 - Admin awareness with optional UAC elevation for operations that require it.
 - Persistent settings (paths, passes, logs folder, theme, confirmation phrase, geometry).
