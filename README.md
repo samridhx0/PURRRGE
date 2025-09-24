@@ -5,6 +5,12 @@
 
 **PURRRGE is a desktop front‑end for Microsoft Sysinternals SDelete v2.05.**
 
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/d9712bea-f7be-4a0a-9db4-9d7cd1d3adb4" />
+
+<img width="255" height="188" alt="image" src="https://github.com/user-attachments/assets/16da8cc5-971f-43e0-a293-d862c4d8e9e7" />
+
+
+
 Highlights
 - Full coverage of core SDelete flags (passes, recursion, read‑only removal, quiet mode, treat drive letters, clean `-c`, zero `-z`, and automatic `-nobanner`).
 - Queue‑based execution with live status, exit codes, elapsed time, aggregate progress, and ETA.
