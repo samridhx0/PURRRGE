@@ -26,6 +26,32 @@ Download and Run
 4. Double‑click `PURRRGE.exe` to launch.
 
 Notes
-- The About dialog title is “PURRRGE (SDelete)”.
 - The app tries to auto‑detect SDelete at startup and shows the resolved path in the status bar.
 - If detection fails, open Settings and browse to your SDelete executable.
+
+Quick Usage
+1. Choose a mode: Secure Delete, Clean Free Space, or Zero Free Space.
+2. Configure passes and flags as needed.
+3. Add files/folders/drives/disks to the queue.
+4. Review the Command Preview; type the confirmation phrase (default: `ERASE`).
+5. Start and watch live output in the docked console. Cancel will stop the current job and mark remaining as cancelled.
+
+Elevation and Safety
+- Cleaning/Zeroing often requires administrator privileges. PURRRGE can relaunch itself via UAC when needed.
+- Cleaning/Zeroing can consume all available disk space during execution and may impact system stability until completion.
+- Zeroing physical disks is destructive. Ensure no mounted volumes exist on the target disk.
+- Always maintain verified backups before performing secure deletion tasks.
+
+Logs and Privacy
+- Logs are written to the configured logs directory and rotate to prevent unbounded growth.
+- Each entry includes timestamp, command line (with optional `%USERNAME%` redaction), stdout, stderr, exit code, and duration.
+- PURRRGE does not send telemetry.
+
+Troubleshooting
+- “SDelete executable not found” — Place `sdelete64.exe` next to `PURRRGE.exe`, add it to PATH, or select it in Settings.
+- SmartScreen warnings — Click “More info” and “Run anyway” if you trust the build, or build locally from source.
+- High startup time for single‑file builds — Prefer the one‑folder build for snappier startup.
+
+Licensing and Acknowledgements
+- PURRRGE is a GUI wrapper around Microsoft Sysinternals SDelete, which remains subject to its own licensing and EULA. Review the official SDelete documentation and license before use.
+- SDelete is a trademark of Microsoft.
